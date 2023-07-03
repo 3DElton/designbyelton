@@ -1,0 +1,118 @@
+nav {
+  height: 8vh;
+}
+
+.site-icon {
+  width: 1.8rem !important;
+}
+
+.navi-link {
+  font-size: 150%;
+  transition: all 0.5s;
+}
+
+.my-link {
+  text-decoration: none;
+  font-weight: 300;
+  color: #f7f7f7;
+  transition: all 0.7s ease;
+}
+
+.my-link:hover,
+.my-link:active {
+  text-decoration: none;
+  font-weight: 500;
+  color: #f7f7f7;
+  transition: all 0.7s ease;
+}
+
+.navi {
+  color: #f7f7f7;
+  background-color: #f7f7f72a; /*29ff54 add a white background color with transparency */
+  padding: 10px 0; /* add some padding around the text */
+  width: 100vw;
+
+  backdrop-filter: blur(7px);
+  z-index: 9999;
+  transition: all 0.5s;
+}
+
+.link1:hover::before,
+.link1:active {
+  content: "Portfolio";
+  text-align: center;
+  font-size: 50%;
+  color: #9e28d2;
+  transition: all 0.5s;
+}
+
+.link2:hover::before,
+.link2:active {
+  content: "Tools";
+  text-align: center;
+  font-size: 50%;
+  color: #9e28d2;
+  transition: all 0.5s;
+}
+
+.link3:hover::before,
+.link3:active {
+  content: "Contact";
+  text-align: center;
+  font-size: 50%;
+  color: #9e28d2;
+  transition: all 0.5s;
+}
+
+.link4:hover::before,
+.link4:active {
+  content: "Blog";
+  text-align: center;
+  font-size: 50%;
+  color: #9e28d2;
+  transition: all 0.5s;
+}
+
+.active {
+  display: block;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  padding: 20% 0;
+}
+
+/*d-flex flex-row right-align justify-content-around w-25 nav-menu*/
+
+.desktop-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 100vw;
+  gap: 50px;
+}
+
+/*small tablet*/
+@media (max-width: 768px) {
+}
+/*medium laptop*/
+@media (max-width: 996px) {
+  .navi {
+    color: #212121;
+    background-color: #f7f7f72a; /*29ff54 add a white background color with transparency */
+    padding: 20px 0; /* add some padding around the text */
+
+    backdrop-filter: blur(7px);
+    z-index: 9999;
+    transition: all 0.5s;
+  }
+}
+/*large desktop*/
+@media (max-width: 1200px) {
+}

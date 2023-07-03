@@ -1,0 +1,121 @@
+.hero-btn {
+  color: #f7f7f7;
+  background-color: #2121216c; /*29ff54 add a white background color with transparency */
+  padding: 2% 5%; /* add some padding around the text */
+  border-radius: 5px;
+  border: solid #9e28d2b6 1px;
+  cursor: pointer;
+  transition: all 0.7s;
+  box-shadow: 0 0 7px #9e28d2b6;
+}
+
+.hero-btn:hover,
+.hero-btn:active {
+  background-color: #9e28d2b6; /*29ff54 add a white background color with transparency */
+  padding: 2% 5%; /* add some padding around the text */
+  border-radius: 5px;
+  transition: all 0.7s;
+}
+
+.hero-header {
+  writing-mode: vertical-rl;
+  height: max-content;
+}
+
+.Hero,
+.Post {
+  user-select: none;
+}
+
+.text-gradient-light {
+  background: linear-gradient(to bottom, #9e28d2, 35%, #f7f7f7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.text-gradient-dark {
+  background: linear-gradient(to bottom, #212121, 70%, #9e28d2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.par-text {
+  width: 100%;
+}
+
+.Short-Resume-Card {
+  overflow: auto;
+  resize: both;
+}
+
+.card-section {
+  width: 100%;
+}
+
+.imgGalleryContainer {
+  margin: 5vh 15rem;
+  columns: 2 250px;
+  gap: 10px;
+  height: fit-content;
+  padding: 10% 5%;
+  background-color: #f7f7f72c;
+  backdrop-filter: blur(25px);
+}
+
+.imageGallery {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 90%;
+  height: auto;
+  transition-duration: 0.3s;
+  filter: grayscale(80%) opacity(70%);
+  cursor: pointer;
+}
+
+.imageGallery:hover {
+  transition-duration: 0.7s;
+  filter: grayscale(0%) opacity(100%);
+  width: 100%;
+}
+
+iframe {
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/*small tablet*/
+@media (max-width: 768px) {
+  .imgGalleryContainer {
+    margin: 10vh 2rem;
+    columns: 2 250px;
+    gap: 10px;
+    height: fit-content;
+    padding: 10% 5%;
+  }
+}
+/*medium laptop*/
+@media (min-width: 996px) {
+  .imgGalleryContainer {
+    margin: 10vh 15rem;
+    columns: 2 250px;
+    gap: 10px;
+    height: fit-content;
+    padding: 10% 2%;
+  }
+}
+/*large desktop*/
+@media (min-width: 1200px) {
+  /*  .imgGalleryContainer {
+    margin: 5vh 10rem;
+    columns: 3 250px;
+    gap: 10px;
+    height: fit-content;
+    padding: 10% 0;
+  }*/
+}
