@@ -1,0 +1,536 @@
+nav {
+  height: 8vh;
+}
+
+.site-icon {
+  width: 1.8rem !important;
+}
+
+.navi-link {
+  font-size: 150%;
+  transition: all 0.5s;
+}
+
+.my-link {
+  text-decoration: none;
+  font-weight: 300;
+  color: #f7f7f7;
+  transition: all 0.7s ease;
+}
+
+.my-link:hover,
+.my-link:active {
+  text-decoration: none;
+  font-weight: 500;
+  color: #f7f7f7;
+  transition: all 0.7s ease;
+}
+
+.navi {
+  color: #f7f7f7;
+  background-color: #f7f7f72a; /*29ff54 add a white background color with transparency */
+  padding: 10px 0; /* add some padding around the text */
+  width: 100vw;
+
+  backdrop-filter: blur(7px);
+  z-index: 9999;
+  transition: all 0.5s;
+}
+
+.link1:hover::before,
+.link1:active {
+  content: "Portfolio";
+  text-align: center;
+  font-size: 50%;
+  color: #9e28d2;
+  transition: all 0.5s;
+}
+
+.link2:hover::before,
+.link2:active {
+  content: "Tools";
+  text-align: center;
+  font-size: 50%;
+  color: #9e28d2;
+  transition: all 0.5s;
+}
+
+.link3:hover::before,
+.link3:active {
+  content: "Contact";
+  text-align: center;
+  font-size: 50%;
+  color: #9e28d2;
+  transition: all 0.5s;
+}
+
+.link4:hover::before,
+.link4:active {
+  content: "Blog";
+  text-align: center;
+  font-size: 50%;
+  color: #9e28d2;
+  transition: all 0.5s;
+}
+
+.active {
+  display: block;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  padding: 20% 0;
+}
+
+/*d-flex flex-row right-align justify-content-around w-25 nav-menu*/
+
+.desktop-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 100vw;
+  gap: 50px;
+}
+
+/*small tablet*/
+@media (max-width: 768px) {
+}
+/*medium laptop*/
+@media (max-width: 996px) {
+  .navi {
+    color: #212121;
+    background-color: #f7f7f72a; /*29ff54 add a white background color with transparency */
+    padding: 20px 0; /* add some padding around the text */
+
+    backdrop-filter: blur(7px);
+    z-index: 9999;
+    transition: all 0.5s;
+  }
+}
+/*large desktop*/
+@media (max-width: 1200px) {
+}
+
+/* Reset all styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset body styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* Reset heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* Reset list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Reset link styles */
+.a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  z-index: -1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9e28d2;
+  border-radius: 6px;
+  z-index: -1;
+}
+
+::-webkit-scrollbar-track {
+  background: #212121;
+  border-radius: 6px;
+  z-index: -1;
+}
+
+.content-container {
+  height: 100vh;
+  width: 100vw;
+  color: #f7f7f7;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-container2 {
+  height: fit-content;
+  width: 100%;
+  color: #f7f7f7;
+  padding: 25vh 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-page {
+  background-image: url(public/images/background/sandro-katalina-k1bO_VTiZSs-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.portfolio-page {
+  background-image: url(public/images/background/defaultcube.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.body {
+  background-image: url(public/images/background/cube.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.Resume {
+  height: 200vh;
+  width: 100vw;
+  color: #212121;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-wrapper {
+  background-color: #2121216c; /*29ff54 add a white background color with transparency */
+  padding: 5%; /* add some padding around the text */
+  height: fit-content;
+  width: 50%;
+
+  backdrop-filter: blur(7px);
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Resume-content-wrapper {
+  background-color: #f7f7f7ee; /*29ff54 add a white background color with transparency */
+  padding: 10%; /* add some padding around the text */
+  height: fit-content;
+  width: 90%;
+
+  backdrop-filter: blur(7px);
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.Hero .content-wrapper {
+  height: fit-content;
+  width: 100%;
+}
+
+.footer-container {
+  height: fit-content;
+  width: 100vw;
+  padding: 5rem 3rem;
+
+  background-color: #212121;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem !important;
+
+  /*sticky-bottom*/
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  z-index: 1020;
+}
+
+/*small tablet*/
+@media (max-width: 768px) {
+}
+/*medium laptop*/
+@media (max-width: 996px) {
+  .content-wrapper {
+    background-color: #2121216c; /*29ff54 add a white background color with transparency */
+    padding: 10%; /* add some padding around the text */
+    height: fit-content;
+    width: 80%;
+
+    backdrop-filter: blur(7px);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+}
+/*large desktop*/
+@media (max-width: 1200px) {
+}
+
+.hero-btn {
+  color: #f7f7f7;
+  background-color: #2121216c; /*29ff54 add a white background color with transparency */
+  padding: 2% 5%; /* add some padding around the text */
+  border-radius: 5px;
+  border: solid #9e28d2b6 1px;
+  cursor: pointer;
+  transition: all 0.7s;
+  box-shadow: 0 0 7px #9e28d2b6;
+}
+
+.hero-btn:hover,
+.hero-btn:active {
+  background-color: #9e28d2b6; /*29ff54 add a white background color with transparency */
+  padding: 2% 5%; /* add some padding around the text */
+  border-radius: 5px;
+  transition: all 0.7s;
+}
+
+.hero-header {
+  writing-mode: vertical-rl;
+  height: max-content;
+}
+
+.Hero,
+.Post {
+  user-select: none;
+}
+
+.text-gradient-light {
+  background: linear-gradient(to bottom, #9e28d2, 35%, #f7f7f7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.text-gradient-dark {
+  background: linear-gradient(to bottom, #212121, 70%, #9e28d2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.par-text {
+  width: 100%;
+}
+
+.Short-Resume-Card {
+  overflow: auto;
+  resize: both;
+}
+
+.card-section {
+  width: 100%;
+}
+
+.imgGalleryContainer {
+  margin: 5vh 15rem;
+  columns: 2 250px;
+  gap: 10px;
+  height: fit-content;
+  padding: 10% 5%;
+  background-color: #f7f7f72c;
+  backdrop-filter: blur(25px);
+}
+
+.imageGallery {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 90%;
+  height: auto;
+  transition-duration: 0.3s;
+  filter: grayscale(80%) opacity(70%);
+  cursor: pointer;
+}
+
+.imageGallery:hover {
+  transition-duration: 0.7s;
+  filter: grayscale(0%) opacity(100%);
+  width: 100%;
+}
+
+iframe {
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/*small tablet*/
+@media (max-width: 768px) {
+  .imgGalleryContainer {
+    margin: 10vh 2rem;
+    columns: 2 250px;
+    gap: 10px;
+    height: fit-content;
+    padding: 10% 5%;
+  }
+}
+/*medium laptop*/
+@media (min-width: 996px) {
+  .imgGalleryContainer {
+    margin: 10vh 15rem;
+    columns: 2 250px;
+    gap: 10px;
+    height: fit-content;
+    padding: 10% 2%;
+  }
+}
+/*large desktop*/
+@media (min-width: 1200px) {
+  /*  .imgGalleryContainer {
+      margin: 5vh 10rem;
+      columns: 3 250px;
+      gap: 10px;
+      height: fit-content;
+      padding: 10% 0;
+    }*/
+}
+
+.input,
+select {
+  border-style: none;
+  box-shadow: 0vh 0.5vh 0.5vh #ff000015;
+  border-radius: 5px;
+  transition: 0.25s;
+  background-color: #ffffff20;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(3px);
+  background-blend-mode: lighten;
+  border-style: none;
+  box-shadow: 0vh 0.25vh 1vh #1e1e1e15;
+  padding: 5px;
+  width: 100%;
+}
+
+.form-content-container {
+  height: 100vh;
+  width: 100vw;
+  color: #f7f7f7;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-content-wrapper {
+  color: #212121;
+  background-color: #fed5406c; /*29ff54 add a white background color with transparency */
+  padding: 2%; /* add some padding around the text */
+  height: fit-content;
+  width: 50%;
+  gap: 1rem;
+
+  backdrop-filter: blur(7px);
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Form {
+  background-image: url(public/images/background/mike-meyers--haAxbjiHds-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.form-input {
+  color: #212121;
+  padding: 2%; /* add some padding around the text */
+  width: 100%;
+
+  backdrop-filter: blur(7px);
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+textarea {
+  overflow-y: scroll;
+  resize: none;
+}
+
+/*small tablet*/
+@media (max-width: 768px) {
+}
+/*medium laptop*/
+@media (max-width: 996px) {
+  .form-content-container {
+    height: 100vh;
+    width: 100vw;
+    color: #f7f7f7;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-content-wrapper {
+    width: 90%;
+  }
+}
+/*large desktop*/
+@media (max-width: 1200px) {
+}
