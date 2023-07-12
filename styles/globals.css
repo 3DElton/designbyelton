@@ -80,21 +80,21 @@ ol {
 }
 
 .landing-page {
-  background-image: url(/public/images/background/sandro-katalina-k1bO_VTiZSs-unsplash.jpg);
+  background-image: url(public/images/background/sandro-katalina-k1bO_VTiZSs-unsplash.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
 }
 
 .portfolio-page {
-  background-image: url(/public/images/background/defaultcube.webp);
+  background-image: url(public/images/background/defaultcube.webp);
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
 }
 
 .body {
-  background-image: url(/public/images/background/cube.webp);
+  background-image: url(public/images/background/cube.webp);
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
