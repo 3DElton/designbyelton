@@ -495,6 +495,21 @@
               <button typeof="submit" class="hero-btn">Submit</button>
             </div>
           </form>
+          <script>
+            const form = document.querySelector(".form-content-wrapper");
+            const reasonDropdown = document.getElementById("Reason");
+            const subjectInput = document.createElement("input");
+            subjectInput.setAttribute("type", "hidden");
+            subjectInput.setAttribute("name", "_subject");
+
+            reasonDropdown.addEventListener("change", function () {
+              const selectedOption = this.options[this.selectedIndex];
+              const selectedReason = selectedOption.value;
+              subjectInput.setAttribute("value", selectedReason);
+            });
+
+            form.appendChild(subjectInput);
+          </script>
         </section>
 
         <div class="portfolio-page">
